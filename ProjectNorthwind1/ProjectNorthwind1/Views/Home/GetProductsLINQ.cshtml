@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "GetProductsLINQ";
+}
+
+<link href="~/StyleSheet1.css" rel="stylesheet" type="text/css" />
+
+<h2>Get Products LINQ</h2>
+
+<a href="Index" class="Bbutton">&lt;Back</a><br /><br />
+
+@foreach(var p in ViewBag.WhatWeWant)
+{
+        @p.CategoryID
+        @p.ProductName
+        @p.UnitPrice <br />
+}
+

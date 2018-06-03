@@ -1,0 +1,73 @@
+﻿@{
+    ViewBag.Title = "Associated Orders";
+}
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+<link href="~/MatSheet.css" rel="stylesheet" type="text/css" />
+
+<nav>
+    <div class="nav-wrapper">
+        <a href="Index" class="brand-logo center">Northwind</a>
+        <!--<img src="IWLogo.jpg" alt="Main Logo" class="mlogo">-->
+    </div>
+</nav>
+<br />
+<br />
+
+<div class="Bbutton">
+    <a class="btn-floating btn-large waves-effect waves-light red" id="bacbutl" href="ListShippers"><i class="material-icons">arrow_back</i></a>
+</div>
+
+<h2>Selected Shipper</h2>
+<br />
+
+<table class="mtable">
+    <thead class="lhead">
+        <tr>
+            <th>Shipper ID</th>
+            <th>Company Name</th>
+            <th>Phone</th>
+        </tr>
+    </thead>
+
+    <tr class="rowlist">
+        <td>@ViewBag.Shipper.ShipperID</td>
+        <td>@ViewBag.Shipper.CompanyName</td>
+        <td>@ViewBag.Shipper.Phone</td>
+
+    </tr>
+
+</table>
+
+<h3>Associated Orders</h3>
+<br />
+
+<table class="mtable" style="width: 80%;">
+    <thead class="lhead">
+        <tr>
+            <th>Order ID</th>
+            <th>Order Date</th>
+            <th>Shipped Date</th>
+            <th>Shipped Date</th>
+            <th>Ship Address</th>
+            <th>Ship Country</th>
+        </tr>
+    </thead>
+
+        @foreach (var p in ViewBag.WhatWeWant)
+        {
+            <tr class="rowlist">
+                <td>@p.OrderID</td>
+                <td>@p.OrderDate</td>
+                <td>@p.ShippedDate</td>
+                <td>@p.ShipName</td>
+                <td>@p.ShipAddress</td>
+                <td>@p.ShipCountry</td>
+            </tr>
+        }
+</table>

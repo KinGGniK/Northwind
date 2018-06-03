@@ -1,0 +1,48 @@
+﻿
+@{
+    ViewBag.Title = "New Employee";
+}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+<link href="~/MatSheet.css" rel="stylesheet" type="text/css" />
+
+<nav>
+    <div class="nav-wrapper">
+        <a href="~/Views/Home/Index" class="brand-logo center">Northwind</a>
+        <div class="sidenav">
+            <ul>
+                <li><a href="UpdateEmployeesPage">Edit</a></li>
+                <li><a href="DelEmployeesPage">Delete</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<h2>New Employee</h2>
+
+<div class="Bbutton">
+    <a href="UpdateEmployeesPage" class="Bbutton">&lt;Back</a>
+</div>
+
+<div class="submitpage">
+    <h2>New Employee Created.</h2>
+
+    <h3>The Information Submitted Was:</h3>
+
+    First Name:        @ViewBag.FName <br />
+    Last Name:         @ViewBag.LName <br />
+    Title:             @ViewBag.Title <br />
+    Title of Courtesy: @ViewBag.Titofcourt <br />
+    Birth Date:        @ViewBag.BDate <br />
+    Hire Date:         @ViewBag.HDate <br />
+    Address:           @ViewBag.Addy <br />
+    City:              @ViewBag.City <br />
+    Region:            @ViewBag.Region <br />
+    Postal Code:       @ViewBag.Postal <br />
+    Country:           @ViewBag.Country <br />
+    Home Phone:        @ViewBag.HPhone <br />
+    Extension:         @ViewBag.Exten <br />
+    Photo:             @ViewBag.Photo <br />
+    Notes:             @ViewBag.Notes <br />
+    Reports To:        @ViewBag.Repto <br />
+</div>

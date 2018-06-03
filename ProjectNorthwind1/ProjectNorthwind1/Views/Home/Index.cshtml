@@ -1,0 +1,104 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+<link href="~/MatSheet.css" rel="stylesheet" type="text/css" />
+
+
+<nav>
+    <div class="nav-wrapper">
+        <a href="#" class="brand-logo center">Northwind</a>
+        <!--<img src="IWLogo.jpg" alt="Main Logo" class="mlogo">-->
+    </div>
+</nav>
+<br />
+<br />
+
+<div class="card" id="headcard">
+    <div class="card-content">
+        <p>
+            Hi
+            Welcome to Northwind!
+            Northwind is a database consisting of several tables
+            that contain information.
+            This website allows you to:
+        </p>
+    </div>
+    <div class="card-tabs">
+        <ul class="tabs tabs-fixed-width">
+            <li class="tab"><a href="#test4" id="tlist">List</a></li>
+            <li class="tab"><a class="active" id="tinst" href="#test5">Insert</a></li>
+            <li class="tab"><a href="#test6" id="tedit">Edit</a></li>
+            <li class="tab"><a href="#test6" id="tdel">Delete</a></li>
+        </ul>
+    </div>
+    <div class="card-content grey lighten-4">
+        <div id="test4">List the information stored in the tables.</div>
+        <div id="test5">Insert information into the tables.</div>
+        <div id="test6">Edit the inormation within the tables.</div>
+        <div id="test6">Delete information from the tables.</div>
+    </div>
+</div>
+
+
+<div class="switchboard">
+    <div class="sicons">
+        <div class="icname">
+            <h3 id="hlist">List</h3>
+        </div>
+        <div class="swicon">
+            <a class="btn-floating btn-large waves-effect waves-light red" id="iclist" href="ListPage"><i class="material-icons">list</i></a>
+        </div>
+    </div>
+
+    <div class="sicons">
+        <div class="icname">
+            <h3 id="hinst">Insert</h3>
+        </div>
+        <div class="swicon">
+            <a class="btn-floating btn-large waves-effect waves-light red" id="icinst" href="InsertPage"><i class="material-icons">add</i></a>
+        </div>
+    </div>
+
+    <div class="sicons">
+        <div class="icname">
+            <h3 id="hedit">Edit</h3>
+        </div>
+        <div class="swicon">
+            <a class="btn-floating btn-large waves-effect waves-circle waves-light red" id="icedit" href="EditPage"><i class="material-icons">edit</i></a>
+        </div>
+    </div>
+
+    <div class="sicons">
+        <div class="icname">
+            <h3 id="hdel">Delete</h3>
+        </div>
+        <div class="swicon">
+            <a class="btn-floating btn-large waves-effect waves-light red" id="icdelete" href="DeletePage"><i class="material-icons">delete</i></a>
+        </div>
+    </div>
+</div>
+
+<footer class="page-footer" id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">Created By Ivensky Watermann</h5>
+                <p class="grey-text text-lighten-4">Everyone needs a Northwind Project.</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            © 2018 Copyright by Victor Czar Ivansky Inc.
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>

@@ -1,0 +1,127 @@
+﻿
+@{
+    ViewBag.Title = "Edit Employees Form";
+}
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+<link href="~/MatSheet.css" rel="stylesheet" type="text/css" />
+
+<nav class="enav">
+    <div class="nav-wrapper">
+        <a href="Index" class="brand-logo center">Northwind</a>
+        <!--<img src="IWLogo.jpg" alt="Main Logo" class="mlogo">-->
+    </div>
+</nav>
+<br />
+<br />
+
+<body>
+
+    <div class="Bbutton">
+        <a class="btn-floating btn-large waves-effect waves-light red" id="bacbute" href="EditEmployeesPage"><i class="material-icons">arrow_back</i></a>
+    </div>
+    <br />
+
+
+    <form action="EditEmployees" class="mainform">
+        <div class="subform">
+
+            <h2 class="edit">Edit Employees Form</h2>
+            <br />
+            <p class="editdir">Please Enter the Following:</p>
+            <br /><br /><br />
+
+            <div class="row">
+                <div class="inputdiv2">
+                    First Name:         <input type="text" name="fname" value="@ViewBag.Employee.FirstName">
+                </div>
+                <div class="inputdiv2">
+                    Last Name:         <input type="text" name="lname" value="@ViewBag.Employee.LastName">
+                </div>
+                <div class="inputdiv2">
+                    Title of Courtesy:         <input type="text" name="titofcourt" value="@ViewBag.Employee.TitleofCourtesy">
+                </div>
+            </div>
+            <div class="inputdiv2">
+                Title:         <input type="text" name="title" value="@ViewBag.Employee.Title">
+            </div>
+            <div class="row">
+                <div class="inputdiv3">
+                    Birth Date:         <input type="text" name="bdate" value="@ViewBag.Employee.BirthDate">
+                </div>
+                <div class="inputdiv3">
+                    Hire Date:         <input type="text" name="hdate" value="@ViewBag.Employee.HireDate">
+                </div>
+            </div>
+            <div class="inputdiv2">
+                Address:          <input type="text" name="addy" value="@ViewBag.Employee.Address">
+            </div>
+            <div class="row">
+                <div class="inputdiv4">
+                    City:          <input type="text" name="city" value="@ViewBag.Employee.City">
+                </div>
+                <div class="inputdiv4">
+                    Region:          <input type="text" name="region" value="@ViewBag.Employee.Region">
+                </div>
+                <div class="inputdiv4">
+                    Postal Code:          <input type="text" name="postal" value="@ViewBag.Employee.PostalCode">
+                </div>
+                <div class="inputdiv4">
+                    Country:          <input type="text" name="country" value="@ViewBag.Employee.Country">
+                </div>
+            </div>
+            <div class="row">
+                <div class="inputdiv3">
+                    Home Phone:          <input type="text" name="hphone" value="@ViewBag.Employee.HomePhone">
+                </div>
+                <div class="inputdiv3">
+                    Extension:          <input type="text" name="exten" value="@ViewBag.Employee.Extension">
+                </div>
+            </div>
+            <div class="inputdiv2">
+                Photo:          <input type="text" name="photo" value="@ViewBag.Employee.Photo">
+            </div>
+            <div class="inputdiv2">
+                Notes:          <br /><textarea rows="10" cols="30" name="notes" id="textarea1" class="materialize-textarea">@ViewBag.Employee.Notes</textarea>
+            </div>
+            <div class="inputdiv">
+                Reports To:         <input type="text" name="repto" value="@ViewBag.Employee.ReportsTo">
+            </div>
+
+            <div class="BContainer">
+                <div class="#">
+                    <button class="btn waves-effect waves-light" id="icedit" type="reset" name="reset">Reset</button>
+                </div>
+                <div class="#">
+                    <button class="btn waves-effect waves-light" id="icedit" type="submit" name="action">Submit<i class="material-icons right">send</i></button>
+                </div>
+            </div>
+
+        </div>
+</form>
+</body>
+
+<footer class="page-footer" id="efooter">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">Created By Ivensky Watermann</h5>
+                <p class="grey-text text-lighten-4">Everyone needs a Northwind Project.</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            © 2018 Copyright by Victor Czar Ivansky Inc.
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="materialize.js"></script>
+<script src="nwjs.js"></script>

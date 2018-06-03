@@ -1,0 +1,92 @@
+﻿h3 {
+    text-align: center;
+    font-size: 30px;
+    width: 100%;
+    color:black;
+    padding-top:25px;
+    text-decoration: underline;
+}
+body {
+    margin-left: 10px;
+    font-family: Sans-serif;
+}
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+    width: 100%;
+}
+
+th, td {
+    text-align: center;
+    max-width:100%;
+    white-space:nowrap;
+    padding: 10px;
+
+}
+
+tr.header {
+
+}
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+th {
+    background-color: #101010;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    font-size: 70px;
+    width: 100%;
+    color:black;
+    padding-top:25px;
+    text-decoration: underline;
+}
+
+a.button:link, a.button:visited {
+    background-color: #101010;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-left: 10px;
+    padding: 20px; 
+    width: 1500px;
+    height: auto;
+    font-weight:bold;
+    
+}
+
+a.button:hover, a.button:active {
+    background-color: #808080;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    transition-duration: .5s;
+    
+}
+
+a.Bbutton:hover, a.Bbutton:active {
+    color: #808080;
+    text-decoration: none;
+}
+
+div.buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    height:auto;
+    text-align:center;
+    width: 130%;
+    
+}
+a.Bbutton {
+    color: black;
+    text-align: left;
+    width: auto;
+    height: auto;
+    font-weight:bold;
+    font-size: 20px;
+    text-decoration: none;
+}

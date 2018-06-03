@@ -1,0 +1,67 @@
+﻿
+@{
+    ViewBag.Title = "Listing Shippers";
+}
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+<link href="~/MatSheet.css" rel="stylesheet" type="text/css" />
+
+<nav>
+    <div class="nav-wrapper">
+        <a href="Index" class="brand-logo center">Northwind</a>
+        <!--<img src="IWLogo.jpg" alt="Main Logo" class="mlogo">-->
+    </div>
+</nav>
+<br />
+<br />
+
+<div class="Bbutton">
+    <a class="btn-floating btn-large waves-effect waves-light red" id="bacbutl" href="ListPage"><i class="material-icons">arrow_back</i></a>
+</div>
+
+<h2>Shippers</h2>
+<br />
+
+<table class="mtable">
+    <thead class="lhead">
+        <tr>
+            <th>Shipper ID</th>
+            <th>Company Name</th>
+            <th>Phone</th>
+        </tr>
+    </thead>
+
+        @foreach (var s in ViewBag.AListofShippers)
+        {
+            <tr class="rowlist">
+                <td>@s.ShipperID</td>
+                <td><a href="GetaShipper?id=@s.ShipperID">@s.CompanyName</a></td>
+                <td>@s.Phone</td>
+            </tr>
+        }
+</table>
+
+
+<footer class="page-footer" id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">Created By Ivensky Watermann</h5>
+                <p class="grey-text text-lighten-4">Everyone needs a Northwind Project.</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            © 2018 Copyright by Victor Czar Ivansky Inc.
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+

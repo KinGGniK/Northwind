@@ -1,0 +1,123 @@
+﻿
+@{
+    ViewBag.Title = "Add New Employee Form";
+}
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+<link href="~/MatSheet.css" rel="stylesheet" type="text/css" />
+
+<nav class="inav">
+    <div class="nav-wrapper">
+        <a href="Index" class="brand-logo center">Northwind</a>
+        <!--<img src="IWLogo.jpg" alt="Main Logo" class="mlogo">-->
+    </div>
+</nav>
+<br />
+<br />
+
+<body>
+
+    <div class="Bbutton">
+        <a class="btn-floating btn-large waves-effect waves-light red" id="bacbuti" href="InsertPage"><i class="material-icons">arrow_back</i></a>
+    </div>
+    <br />
+
+    <form action="InsertEmployees" class="mainform">
+        <div class="subform">
+
+            <h2 class="insert">Insert Employees Form</h2>
+            <br />
+            <p class="insertdir">Please Enter the Following:</p>
+            <br /><br /><br />
+
+        <div class="row">
+            <div class="inputdiv2">
+                First Name:         <input type="text" name="fname" placeholder="First Name">
+            </div>
+            <div class="inputdiv2">
+                Last Name:         <input type="text" name="lname" placeholder="Last Name">
+            </div>
+            <div class="inputdiv2">
+                Title of Courtesy:         <input type="text" name="titofcourt" placeholder="Title of Courtesy">
+            </div>
+        </div>
+        <div class="inputdiv2">
+            Title:         <input type="text" name="title" placeholder="Title">
+        </div>
+        <div class="row">
+            <div class="inputdiv3">
+                Birth Date:         <input type="date" name="bdate" placeholder="Birth Date">
+            </div>
+            <div class="inputdiv3">
+                Hire Date:         <input type="date" name="hdate" placeholder="Hire Date">
+            </div>
+        </div>
+        <div class="inputdiv2">
+            Address:          <input type="text" name="addy" placeholder="Address">
+        </div>
+        <div class="row">
+            <div class="inputdiv4">
+                City:          <input type="text" name="city" placeholder="City">
+            </div>
+            <div class="inputdiv4">
+                Region:          <input type="text" name="region" placeholder="Region">
+            </div>
+            <div class="inputdiv4">
+                Postal Code:          <input type="text" name="postal" placeholder="Postal Code">
+            </div>
+            <div class="inputdiv4">
+                Country:          <input type="text" name="country" placeholder="Country">
+            </div>
+        </div>
+        <div class="row">
+            <div class="inputdiv3">
+                Home Phone:          <input type="text" name="hphone" placeholder="Home Phone">
+            </div>
+            <div class="inputdiv3">
+                Extension:          <input type="text" name="exten" placeholder="Extension">
+            </div>
+        </div>
+        <div class="inputdiv2">
+            Photo:          <input type="text" name="photo" placeholder="Photo?">
+        </div>
+        <div class="inputdiv2">
+            Notes:          <br /><textarea rows="10" cols="30" name="notes" id="textarea1" class="materialize-textarea"></textarea>
+        </div>
+        <div class="inputdiv">
+            Reports To:         <input type="number" name="repto" placeholder="Reports To">
+        </div>
+
+        <div class="BContainer">
+            <div class="#">
+                <button class="btn waves-effect waves-light" id="icinst" type="reset" name="reset">Reset</button>
+            </div>
+            <div class="#">
+                <button class="btn waves-effect waves-light" id="icinst" type="submit" name="action">Submit<i class="material-icons right">send</i></button>
+            </div>
+        </div>
+      </div>
+    </form>
+</body>
+
+<footer class="page-footer" id="ifooter">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">Created By Ivensky Watermann</h5>
+                <p class="grey-text text-lighten-4">Everyone needs a Northwind Project.</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            © 2018 Copyright by Victor Czar Ivansky Inc.
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>

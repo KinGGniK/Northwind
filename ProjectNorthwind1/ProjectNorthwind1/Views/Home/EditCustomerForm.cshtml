@@ -1,0 +1,119 @@
+﻿
+@{
+    ViewBag.Title = "Edit Customer Form";
+}
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+<link href="~/MatSheet.css" rel="stylesheet" type="text/css" />
+
+<nav class="enav">
+    <div class="nav-wrapper">
+        <a href="Index" class="brand-logo center">Northwind</a>
+        <!--<img src="IWLogo.jpg" alt="Main Logo" class="mlogo">-->
+    </div>
+</nav>
+<br />
+<br />
+
+<body>
+
+    <div class="Bbutton">
+        <a class="btn-floating btn-large waves-effect waves-light red" id="bacbute" href="EditCustomersPage"><i class="material-icons">arrow_back</i></a>
+    </div>
+    <br />
+
+
+    <form action="EditCustomer" class="mainform">
+        <div class="subform">
+
+            <h2 class="edit">Edit Customer Form</h2>
+            <br />
+            <p class="editdir">Please Enter the Following:</p>
+            <br /><br /><br />
+
+            <div class="inputdiv">
+                ID:         <input type="text" name="id" value="@ViewBag.Customer.CustomerID" disabled><br />
+            </div>
+            <br />
+
+            <div class="row">
+                <div class="inputdiv2">
+                    Company Name:         <input type="text" name="compname" value="@ViewBag.Customer.CompanyName">
+                </div>
+                <div class="inputdiv2">
+                    Contact Name:         <input type="text" name="name" value="@ViewBag.Customer.ContactName">
+                </div>
+                <div class="inputdiv2">
+                    Contact Title:         <input type="text" name="title" value="@ViewBag.Customer.ContactTitle">
+                </div>
+            </div>
+            <br />
+
+            <div class="inputdiv2">
+                Address:          <input type="text" name="addy" value="@ViewBag.Customer.Address">
+            </div>
+            <br />
+
+            <div class="row">
+                <div class="inputdiv4">
+                    City:          <input type="text" name="city" value="@ViewBag.Customer.City">
+                </div>
+                <div class="inputdiv4">
+                    Region:          <input type="text" name="region" value="@ViewBag.Customer.Region">
+                </div>
+                <div class="inputdiv4">
+                    Postal Code:          <input type="text" name="postal" value="@ViewBag.Customer.PostalCode">
+                </div>
+                <div class="inputdiv4">
+                    Country:          <input type="text" name="country" value="@ViewBag.Customer.Country">
+                </div>
+            </div>
+            <br />
+
+            <div class="row">
+                <div class="inputdiv3">
+                    Phone:          <input type="text" name="phone" value="@ViewBag.Customer.Phone">
+                </div>
+                <div class="inputdiv3">
+                    Fax:          <input type="text" name="fax" value="@ViewBag.Customer.Fax">
+                </div>
+            </div>
+
+            <br />
+            <div class="BContainer">
+                <div class="#">
+                    <button class="btn waves-effect waves-light" id="icedit" type="reset" name="reset">Reset</button>
+                </div>
+                <div class="#">
+                    <button class="btn waves-effect waves-light" id="icedit" type="submit" name="action">Submit<i class="material-icons right">send</i></button>
+                </div>
+            </div>
+
+        </div>
+    </form>
+</body>
+
+<footer class="page-footer" id="efooter">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">Created By Ivensky Watermann</h5>
+                <p class="grey-text text-lighten-4">Everyone needs a Northwind Project.</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            © 2018 Copyright by Victor Czar Ivansky Inc.
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="materialize.js"></script>
+<script src="nwjs.js"></script>
